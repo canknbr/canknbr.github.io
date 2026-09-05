@@ -1,0 +1,348 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>IcyPomo — Gizlilik Politikası / Privacy Policy</title>
+    <style>
+      :root {
+        color-scheme: light dark;
+        --bg: #f2faff;
+        --fg: #0b1f33;
+        --muted: #33627a;
+        --line: #cfeaf7;
+        --accent: #2e86c4;
+      }
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --bg: #081727;
+          --fg: #e4f4fc;
+          --muted: #aad6ea;
+          --line: #16324b;
+          --accent: #5bc8ff;
+        }
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--fg);
+        font: 16px/1.6 -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        -webkit-text-size-adjust: 100%;
+      }
+      main { max-width: 720px; margin: 0 auto; padding: 40px 20px 80px; }
+      h1 { font-size: 28px; letter-spacing: -0.3px; margin: 0 0 4px; }
+      h2 { font-size: 20px; margin: 40px 0 8px; }
+      h3 { font-size: 16px; margin: 24px 0 4px; }
+      p, li { color: var(--fg); }
+      .muted { color: var(--muted); }
+      a { color: var(--accent); }
+      hr { border: none; border-top: 1px solid var(--line); margin: 56px 0; }
+      .lang { text-transform: uppercase; letter-spacing: 2px; font-size: 12px; color: var(--muted); }
+      ul { padding-left: 20px; }
+      li { margin: 6px 0; }
+      code { background: var(--line); padding: 1px 5px; border-radius: 5px; font-size: 14px; }
+    </style>
+  </head>
+  <body>
+    <main>
+      <!-- ————————————————————— TÜRKÇE ————————————————————— -->
+      <p class="lang">Türkçe</p>
+      <h1>Gizlilik Politikası</h1>
+      <p class="muted">IcyPomo uygulaması · Yürürlük tarihi: 5 Eylül 2026</p>
+
+      <p>
+        IcyPomo, cihazında çalışan bir odak uygulamasıdır. İlke sade: <strong>seansların, notların ve
+        yazdığın söz senin cihazında yaşar.</strong> Kayıt olmak zorunda değilsin; senden ad ya da
+        e-posta istemeyiz. Reklam yok, çapraz-uygulama takibi yok, verilerini satmayız.
+      </p>
+      <p>
+        Sormadan yaptığımız tek bir şey var ve tahmin etmen yerine burada okumanı tercih ederiz:
+        IcyPomo'yu ilk açtığında sunucumuzda kendisi için <strong>anonim bir hesap</strong> oluşturur.
+        O hesapta rastgele bir kimlik ve iki tarih vardır — ad yok, e-posta yok, yazdığın hiçbir şey
+        yok. Bu sayfadaki diğer her şey ya isteğe bağlıdır ya da sen açana kadar kapalıdır.
+      </p>
+
+      <h2>Topladığımız veriler</h2>
+      <p>
+        IcyPomo <strong>varsayılan olarak yereldir</strong> — aşağıdakiler cihazına yazılır ve
+        cihazından yalnızca Premium'un bulut kopyası çalışırken bir kopya çıkar (bkz. sonraki bölüm):
+      </p>
+      <ul>
+        <li>
+          Seans geçmişin (süre, tamamlanma durumu, mod, molalar, ruh hâli puanın, yazdığın etiket ve
+          notlar) — cihazdaki bir SQLite veritabanında.
+        </li>
+        <li>Tercihlerin, profilin ve yazdığın söz — cihazdaki yerel depoda.</li>
+        <li>Seri (streak) sayacın ve istatistiklerin — cihazında hesaplanır.</li>
+        <li>
+          Ücretsiz sürümün günlük seans sınırı yalnızca cihazında sayılır; bu sayaç hiçbir yere
+          gönderilmez.
+        </li>
+      </ul>
+
+      <h2>Hesabın ve bulut kopyası</h2>
+
+      <h3>Anonim hesap (her kurulumda)</h3>
+      <p>
+        Uygulama ilk açılışta, altyapı sağlayıcımız
+        <a href="https://supabase.com/privacy">Supabase</a> üzerinde kendini anonim olarak oturuma
+        açar. Bunu sormadan yaparız: sana hiçbir maliyeti yoktur ve bir satın alma — ileride de bir
+        yedek — bağlanacağı bir yer bulur. O hesapta rastgele bir kimlik ile oluşturulma ve son
+        kullanım tarihleri tutulur; ad, e-posta, seans ya da yazdığın hiçbir şey yoktur. Satın alması
+        olmayan anonim hesaplar doksan gün hareketsiz kalınca otomatik silinir; uygulama bir dahaki
+        açılışta yenisini oluşturur.
+      </p>
+
+      <h3>Apple ile Giriş (isteğe bağlı)</h3>
+      <p>
+        <strong>Apple ile Giriş</strong> yaparak hesabını kalıcı hale getirebilirsin. Apple'ın
+        paylaştığı e-posta adresi (istersen gizlenmiş bir adres) yalnızca hesabını tanımak için
+        saklanır; başka hiçbir amaçla kullanılmaz.
+      </p>
+
+      <h3>Bulut kopyası (Premium)</h3>
+      <p>
+        Cihazlarını aynı hizada tutmak bir Premium özelliğidir, dolayısıyla bulut kopyası Premium
+        etkinken çalışır; ayrı bir açma-kapama düğmesi yoktur. (Premium'un hiç satılmadığı bir
+        sürümde herkes için çalışır.) Çalıştığı sürece şunlar Supabase üzerinde, yalnızca senin
+        hesabının okuyabileceği şekilde saklanır:
+      </p>
+      <ul>
+        <li>
+          <strong>Seansların</strong> — başlangıç ve bitiş zamanı, ne kadar odaklandığın, bitirip
+          bitirmediğin, mod, molalar, yazdığın <em>konu etiketi</em>, <em>ruh hâli puanın</em> ve
+          yazdığın <em>not</em>.
+        </li>
+        <li>
+          <strong>Profilin</strong> — modun ve ayarları, <em>yazdığın söz</em> (metni ve, yazdıysan,
+          <em>adın</em>), tanışma sorularından çıkan Odak Profilin, serin, <em>ödül</em> metnin ve
+          konuya göre kaydettiğin kurulumlar.
+        </li>
+        <li>
+          <strong>Bir cihaz kaydı</strong> — kuruluma özel rastgele bir kimlik ve cihazın iOS mu
+          Android mi olduğu; böylece yedek hangi cihazların senin olduğunu bilir. 180 gün boyunca
+          haber vermeyen bir kayıt silinir.
+        </li>
+      </ul>
+      <p>
+        İmza çizimin cihazından çıkmaz — yalnızca sözünün kelimeleri yolculuk eder. Buradaki hiçbir
+        şey kimseyle paylaşılmaz, satılmaz, reklam için kullanılmaz; başka hiçbir kullanıcı okuyamaz.
+      </p>
+
+      <h2>Analitik, çökme raporları ve takip</h2>
+      <p>
+        <strong>Reklam ve çapraz-uygulama takibi yok.</strong> Uygulamayı iyileştirmek için olay
+        verisi (ör. "seans tamamlandı", süresi ve modu ile) <strong>yalnızca sen açarsan</strong>
+        kendi altyapımızda toplanır — Ayarlar → Hesap'taki seçenek, varsayılan kapalı. Açık olalım:
+        her olay <strong>hesap kimliğinle birlikte</strong> kaydedilir, yani hesabına bağlıdır; buna
+        anonim demiyoruz. Olaylar ne olduğunu ve ne zaman olduğunu taşır, yazdığın kelimeleri değil;
+        satılmaz, reklam için kullanılmaz ve 90 gün sonra silinir. Seçeneği kapalı bırakırsan hiçbir
+        kayıt tutulmaz, gönderilecek bir şey de olmaz.
+      </p>
+      <p>
+        Uygulama çökerse, hatayı bulabilmemiz için <a href="https://sentry.io/privacy/">Sentry</a>
+        üzerinden bir <strong>çökme raporu</strong> gönderilir. Rapor cihaz modeli, işletim sistemi
+        sürümü, uygulama sürümü ve hatanın teknik izini içerir; adını, e-postanı ya da seans
+        verilerini içermez ve reklam amaçlı kullanılmaz.
+      </p>
+
+      <h2>İzinler</h2>
+      <ul>
+        <li>
+          <strong>Bildirimler (isteğe bağlı):</strong> Yalnızca senin başlattığın bir seansın
+          tamamlandığını ya da mola zamanını hatırlatmak için yerel bildirimler kullanılır. Reddedersen
+          uygulama tam olarak çalışmaya devam eder.
+        </li>
+        <li>
+          <strong>Ses:</strong> Ortam sesi çalmak için kullanılır. Mikrofon erişimi <em>istenmez</em>;
+          hiçbir şey kaydedilmez.
+        </li>
+      </ul>
+
+      <h2>Satın almalar (premium)</h2>
+      <p>
+        Premium özellikler açıksa, abonelikler ve tek seferlik satın alma Apple App Store üzerinden
+        işlenir ve işlem durumu <a href="https://www.revenuecat.com/privacy/">RevenueCat</a>
+        aracılığıyla doğrulanır. Bu servis, satın almanı doğrulamak ve hesabına bağlamak için anonim
+        bir kullanıcı tanımlayıcısı ve satın alma geçmişini (ürün, tarih, durum) tutar; adını veya
+        ödeme bilgilerini bizimle paylaşmaz. Ödeme bilgilerini biz görmeyiz.
+      </p>
+
+      <h2>Verilerin üzerindeki hakların</h2>
+      <p>Uygulama içinden, istediğin an:</p>
+      <ul>
+        <li><strong>Dışa aktar:</strong> Tüm yerel verilerini tek bir JSON dosyası olarak alabilirsin.</li>
+        <li>
+          <strong>Sil:</strong> Tüm verilerini — ve bir hesabın varsa hesabını ve buluttaki tüm
+          kopyasını — kalıcı olarak, anında silebilirsin. Geri alınamaz.
+        </li>
+      </ul>
+      <p>
+        KVKK (6698 sayılı Kanun) ve GDPR kapsamındaki haklarına saygı duyulur. Silme, hem cihazındaki
+        veriyi hem (varsa) buluttaki hesabını tamamen kaldırır.
+      </p>
+
+      <h2>Çocuklar</h2>
+      <p>IcyPomo 13 yaş altındaki kullanıcılara yönelik değildir ve onlardan bilerek veri toplamaz.</p>
+
+      <h2>Değişiklikler</h2>
+      <p>
+        Bu politikayı güncellersek, bu sayfadaki yürürlük tarihini değiştiririz. Önemli değişiklikleri
+        uygulama içinden duyururuz.
+      </p>
+
+      <h2>İletişim</h2>
+      <p>Soruların için: <a href="mailto:cankanbur1@gmail.com">cankanbur1@gmail.com</a></p>
+
+      <hr />
+
+      <!-- ————————————————————— ENGLISH ————————————————————— -->
+      <p class="lang">English</p>
+      <h1>Privacy Policy</h1>
+      <p class="muted">IcyPomo app · Effective date: 5 September 2026</p>
+
+      <p>
+        IcyPomo is a focus app that runs on your device. The principle is simple: <strong>your
+        sessions, your notes and your pledge live on your device.</strong> You never have to sign up,
+        and we never ask you for a name or an email. No advertising, no cross-app tracking, and we
+        never sell your data.
+      </p>
+      <p>
+        One thing happens without being asked, and we would rather you read it here than guess: the
+        first time you open IcyPomo it creates an <strong>anonymous account</strong> for itself on our
+        server. That account holds a random identifier and two dates — no name, no email, nothing you
+        have written. Everything else on this page is either optional or switched off until you turn
+        it on.
+      </p>
+
+      <h2>Data we collect</h2>
+      <p>
+        IcyPomo is <strong>local by default</strong> — the following is written on your device, and a
+        copy leaves it only while Premium's cloud copy is running (see the next section):
+      </p>
+      <ul>
+        <li>
+          Your session history (duration, completion, mode, breaks, your mood rating, and any tag or
+          note you write) — in an on-device SQLite database.
+        </li>
+        <li>Your preferences, profile and pledge — in on-device local storage.</li>
+        <li>Your streak counter and statistics — computed on your device.</li>
+        <li>The free plan's daily session count is kept on your device only; it is never sent anywhere.</li>
+      </ul>
+
+      <h2>Your account and the cloud copy</h2>
+
+      <h3>The anonymous account (every install)</h3>
+      <p>
+        On first launch the app signs itself in anonymously with our infrastructure provider
+        <a href="https://supabase.com/privacy">Supabase</a>. We do this without asking because it
+        costs you nothing and it gives a purchase — and, later, a backup — something to attach to.
+        That account holds a random identifier and the dates it was created and last used: no name,
+        no email, no sessions, nothing you typed. An anonymous account that holds no purchase is
+        deleted automatically after ninety days without activity; the app simply makes a fresh one
+        next time it launches.
+      </p>
+
+      <h3>Sign in with Apple (optional)</h3>
+      <p>
+        You can make the account permanent with <strong>Sign in with Apple</strong>. The email address
+        Apple shares (a hidden relay address, if you choose one) is stored only to identify your
+        account and used for nothing else.
+      </p>
+
+      <h3>The cloud copy (Premium)</h3>
+      <p>
+        Keeping your devices in step is a Premium feature, so the cloud copy runs while Premium is
+        active; there is no separate switch for it. (In a version of the app where premium is not sold
+        at all, it runs for everyone.) While it runs, the following is stored on Supabase, readable
+        only by your own account:
+      </p>
+      <ul>
+        <li>
+          <strong>Your sessions</strong> — start and end time, how long you focused, whether you
+          finished, the mode, breaks, any <em>subject tag</em> you typed, your <em>mood rating</em>,
+          and any <em>note</em> you wrote.
+        </li>
+        <li>
+          <strong>Your profile</strong> — your mode and its settings, your <em>pledge</em> (its words
+          and, if you typed one, <em>your name</em>), the Focus Profile drawn from your onboarding
+          answers, your streak, your <em>reward</em> text, and your saved per-subject setups.
+        </li>
+        <li>
+          <strong>A device record</strong> — a random per-install identifier and whether the device is
+          iOS or Android, so a backup knows which devices are yours. Removed after 180 days without a
+          check-in.
+        </li>
+      </ul>
+      <p>
+        Your signature drawing never leaves the device — only the pledge's words travel. None of this
+        is shared with anyone, sold, or used for advertising, and no other user can read it.
+      </p>
+
+      <h2>Analytics, crash reports and tracking</h2>
+      <p>
+        <strong>No advertising, no cross-app tracking.</strong> Event data (e.g. "session completed",
+        with its length and mode) is collected on our own infrastructure <strong>only if you switch it
+        on</strong> — a setting under Settings → Account, off by default. To be straight about it:
+        each event is saved <strong>under your account id</strong>, so it is linked to your account
+        and we do not call it anonymous. Events carry what happened and when, never the words you
+        write; they are never sold, never used for advertising, and are deleted after 90 days. Leave
+        the setting off and nothing is recorded, so there is nothing to send.
+      </p>
+      <p>
+        If the app crashes, a <strong>crash report</strong> is sent through
+        <a href="https://sentry.io/privacy/">Sentry</a> so we can find the bug. It contains the device
+        model, OS version, app version and the technical trace of the error — never your name, email
+        or session data — and is not used for advertising.
+      </p>
+
+      <h2>Permissions</h2>
+      <ul>
+        <li>
+          <strong>Notifications (optional):</strong> Local notifications only, to tell you a session
+          you started has completed or a break has begun. If you decline, the app works fully.
+        </li>
+        <li>
+          <strong>Audio:</strong> Used to play ambient sound. Microphone access is <em>not</em>
+          requested; nothing is recorded.
+        </li>
+      </ul>
+
+      <h2>Purchases (premium)</h2>
+      <p>
+        If premium features are enabled, subscriptions and the one-time purchase are processed by the
+        Apple App Store and validated through <a href="https://www.revenuecat.com/privacy/">RevenueCat</a>.
+        That service keeps an anonymous user identifier and your purchase history (product, date,
+        status) to verify the purchase and attach it to your account; it does not share your name or
+        payment details with us, and we never see your payment details.
+      </p>
+
+      <h2>Your rights over your data</h2>
+      <p>From inside the app, at any time you can:</p>
+      <ul>
+        <li><strong>Export:</strong> Get all of your local data as a single JSON file.</li>
+        <li>
+          <strong>Delete:</strong> Permanently erase all of your data — and, if you have an account,
+          your account and its entire cloud copy — instantly. Irreversible.
+        </li>
+      </ul>
+      <p>
+        Your rights under GDPR and Turkey's KVKK (Law No. 6698) are respected. Deletion removes both the
+        data on your device and (if any) your cloud account entirely.
+      </p>
+
+      <h2>Children</h2>
+      <p>IcyPomo is not directed at children under 13 and does not knowingly collect data from them.</p>
+
+      <h2>Changes</h2>
+      <p>
+        If we update this policy, we will change the effective date on this page and note significant
+        changes in the app.
+      </p>
+
+      <h2>Contact</h2>
+      <p>Questions: <a href="mailto:cankanbur1@gmail.com">cankanbur1@gmail.com</a></p>
+    </main>
+  </body>
+</html>
