@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>IcyPomo — Get the app</title>
+    <meta name="description" content="Download IcyPomo, a calm focus timer for iPhone." />
+    <meta name="robots" content="noindex" />
+    <style>
+      :root { --bg: #141414; --ink: #ffffff; --muted: #6b6b6b; --accent: #5bc8ff; }
+      * { box-sizing: border-box; }
+      body { margin: 0; background: var(--bg); color: var(--ink); font-family: ui-monospace, "SF Mono", Menlo, monospace; line-height: 1.6; }
+      main { max-width: 640px; margin: 0 auto; padding: 96px 24px; text-align: center; }
+      h1 { font-size: 40px; letter-spacing: 1px; margin: 0 0 8px; text-transform: uppercase; }
+      p { margin: 0 0 16px; color: #d9d9d9; }
+      a { color: var(--accent); }
+      .muted { color: var(--muted); font-size: 13px; letter-spacing: 1px; text-transform: uppercase; }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>IcyPomo</h1>
+      <p class="muted">A calm focus timer for iPhone</p>
+      <p id="status">Taking you to the App Store…</p>
+      <p><a id="fallback" href="https://canknbr.github.io/icypomoy/">Back to icypomo</a></p>
+    </main>
+    <script>
+      // GitHub Pages is static, so the campaign hand-off happens here rather
+      // than in a redirect rule. `ct` is Apple's campaign parameter: it tells
+      // App Store Connect which share surface brought someone in.
+      //
+      // APP_ID is empty until the first submission. Until then this page says
+      // so plainly instead of bouncing people to a broken store URL — a dead
+      // redirect is worse than no redirect, because the share card carrying it
+      // is already out in the world by the time anyone notices.
+      var APP_ID = '';
+      var PROVIDER_TOKEN = '';
+
+      function campaign() {
+        try {
+          var ct = new URLSearchParams(window.location.search).get('ct') || '';
+          // Apple caps ct at 40 characters; anything longer is dropped whole,
+          // so truncate rather than lose the attribution entirely.
+          return ct.replace(/[^a-zA-Z0-9._-]/g, '').slice(0, 40);
+        } catch (e) {
+          return '';
+        }
+      }
+
+      (function () {
+        var status = document.getElementById('status');
+        if (!APP_ID) {
+          status.textContent = 'IcyPomo is not on the App Store yet. Soon.';
+          return;
+        }
+        var url = 'https://apps.apple.com/app/id' + APP_ID;
+        var params = [];
+        if (PROVIDER_TOKEN) params.push('pt=' + encodeURIComponent(PROVIDER_TOKEN));
+        var ct = campaign();
+        if (ct) params.push('ct=' + encodeURIComponent(ct));
+        params.push('mt=8');
+        url += '?' + params.join('&');
+        document.getElementById('fallback').setAttribute('href', url);
+        window.location.replace(url);
+      })();
+    </script>
+  </body>
+</html>
