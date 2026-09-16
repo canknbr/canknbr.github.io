@@ -29,11 +29,12 @@
       // than in a redirect rule. `ct` is Apple's campaign parameter: it tells
       // App Store Connect which share surface brought someone in.
       //
-      // APP_ID is empty until the first submission. Until then this page says
-      // so plainly instead of bouncing people to a broken store URL — a dead
-      // redirect is worse than no redirect, because the share card carrying it
-      // is already out in the world by the time anyone notices.
-      var APP_ID = '';
+      // The app record now exists, so APP_ID is set and the redirect works.
+      // The empty-check below stays as a guard rather than being deleted: this
+      // page ships before the app is approved, and a dead redirect is worse
+      // than no redirect — the share card carrying the link is already out in
+      // the world by the time anyone notices it bounces nowhere.
+      var APP_ID = '6812755485';
       var PROVIDER_TOKEN = '';
 
       function campaign() {
