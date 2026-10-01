@@ -37,6 +37,8 @@
       .muted { color: var(--muted); }
       a { color: var(--accent); }
       hr { border: none; border-top: 1px solid var(--line); margin: 56px 0; }
+      section { scroll-margin-top: 16px; }
+      nav.langs { font-size: 14px; margin: 0 0 32px; color: var(--muted); }
       .lang { text-transform: uppercase; letter-spacing: 2px; font-size: 12px; color: var(--muted); }
       ul { padding-left: 20px; }
       li { margin: 6px 0; }
@@ -44,7 +46,11 @@
   </head>
   <body>
     <main>
+      <!-- The app opens this page at #en unless it runs in Turkish (src/lib/legal.ts). -->
+      <nav class="langs"><a href="#tr">Türkçe</a> · <a href="#en">English</a></nav>
+
       <!-- ————————————————————— TÜRKÇE ————————————————————— -->
+      <section id="tr">
       <p class="lang">Türkçe</p>
       <h1>Kullanım Koşulları</h1>
       <p class="muted">IcyPomo uygulaması · Yürürlük tarihi: 4 Eylül 2026</p>
@@ -112,9 +118,12 @@
       <h2>İletişim</h2>
       <p>Soruların için: <a href="mailto:cankanbur1@gmail.com">cankanbur1@gmail.com</a></p>
 
+      </section>
+
       <hr />
 
       <!-- ————————————————————— ENGLISH ————————————————————— -->
+      <section id="en" lang="en">
       <p class="lang">English</p>
       <h1>Terms of Use</h1>
       <p class="muted">IcyPomo app · Effective date: 4 September 2026</p>
@@ -180,6 +189,7 @@
 
       <h2>Contact</h2>
       <p>Questions: <a href="mailto:cankanbur1@gmail.com">cankanbur1@gmail.com</a></p>
+      </section>
     </main>
   </body>
 </html>
