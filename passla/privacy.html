@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; base-uri 'none'; form-action 'none'">
+  <meta name="referrer" content="no-referrer">
+  <title>Privacy Policy — Passla</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <p class="eyebrow">Passla</p>
+    <h1>Privacy Policy</h1>
+    <p>Last updated: 26 October 2026</p>
+
+    <p class="lede">Passla is a password manager for iPhone. This page says what leaves your device, where it goes, and why. The short version: your vault is encrypted on your iPhone, there is no Passla server, and we cannot read it.</p>
+
+    <h2>Your vault</h2>
+    <p>Passwords, 2FA secrets, notes and cards are encrypted on your device with AES-256-GCM. The key is derived with Argon2id from a secret kept in the iOS Keychain. There is no account and no Passla server: we never see your vault, its key, or your master password if you set one.</p>
+
+    <h2>iCloud Keychain and your iPhone backups</h2>
+    <p>So that a new iPhone can open your vault, the secret its key is derived from is also kept in your iCloud Keychain, which Apple encrypts end to end: neither we nor Apple can read it. The encrypted vault itself is part of your iPhone backup, like any app's data. If iCloud Keychain is off, the secret stays on this device, and only an encrypted backup file you export moves the vault to another iPhone.</p>
+
+    <h2>What Passla sends</h2>
+    <p>Nothing, until one of these happens — each one is yours to start:</p>
+    <ul>
+      <li><strong>Purchases</strong> — when you open Premium, buy or restore a subscription, or a paid subscription is about to renew, the app contacts the App Store and our subscription provider, RevenueCat. This includes Apple's AdServices attribution token, which tells us which Apple Ads campaign brought a subscription. AdServices does not track you across apps.</li>
+      <li><strong>Breach check</strong> — off until you turn it on in Settings → Privacy. When on, the first 5 characters of a password's SHA-1 hash go to Have I Been Pwned; the rest of the comparison happens on your device. Your password and its full hash never leave it.</li>
+      <li><strong>Crash reports</strong> — off until you turn them on in Settings → Privacy. When on, Sentry receives crash diagnostics and, from one session in five, performance traces, with the device model, the iOS and app versions and a random ID made for this installation. Never your vault contents, and never screenshots.</li>
+    </ul>
+
+    <h2>Purchases</h2>
+    <p>Apple processes payments. RevenueCat keeps your subscription status and purchase history under an anonymous app user ID.</p>
+
+    <h2>What we don't do</h2>
+    <p>No ads in the app. No selling or sharing of personal data. No tracking across other companies' apps and websites. No accounts, no analytics.</p>
+
+    <h2>Keeping and deleting data</h2>
+    <p>Deleting the app deletes the vault from this iPhone. Copies in your iPhone backups stay until you delete those backups, and the secret's copy in iCloud Keychain stays until you reset the vault: to remove everything, use Settings → Reset Vault before deleting the app. Turning the breach check or crash reports off in Settings → Privacy stops them at once. Apple and RevenueCat keep purchase records as billing requires. To have the crash diagnostics or the anonymous subscription record tied to this installation deleted, write to the address below and we will delete them.</p>
+
+    <h2>Children</h2>
+    <p>Passla is not directed at children under 13.</p>
+
+    <h2>Changes and contact</h2>
+    <p>When this policy changes, this page changes, with a new date at the top. Questions: <a href="mailto:cankanbur1@gmail.com">cankanbur1@gmail.com</a>.</p>
+
+    <hr>
+
+    <h2 lang="tr">Türkçe: Gizlilik Politikası</h2>
+    <div lang="tr">
+      <p>Passla, iPhone için bir şifre yöneticisidir. Kısaca: kasan iPhone'unda şifrelenir, Passla'nın sunucusu yoktur ve biz onu okuyamayız.</p>
+      <p><strong>Kasan.</strong> Şifreler, 2FA gizli anahtarları, notlar ve kartlar cihazında AES-256-GCM ile şifrelenir; anahtar, iOS Anahtar Zinciri'nde tutulan bir sırdan Argon2id ile türetilir. Hesap yok, Passla sunucusu yok: kasanı, anahtarını ya da belirlediysen ana parolanı hiçbir zaman görmeyiz.</p>
+      <p><strong>iCloud Anahtar Zinciri ve iPhone yedeklerin.</strong> Yeni bir iPhone'un kasanı açabilmesi için anahtarın türetildiği sır iCloud Anahtar Zinciri'nde de tutulur; Apple onu uçtan uca şifreler, ne biz ne Apple okuyabilir. Şifreli kasanın kendisi, her uygulamanın verisi gibi iPhone yedeğinin parçasıdır. iCloud Anahtar Zinciri kapalıysa sır bu cihazda kalır ve kasayı başka bir iPhone'a yalnız dışa aktardığın şifreli yedek dosyası taşır.</p>
+      <p><strong>Passla ne gönderir?</strong> Şunlardan biri olana dek hiçbir şey — her birini sen başlatırsın: Premium'u açtığında, abonelik aldığında ya da geri yüklediğinde veya ücretli abonelik yenilenmek üzereyken uygulama App Store'a ve abonelik sağlayıcımız RevenueCat'e bağlanır (Apple'ın AdServices reklam atıf kodu dahil — hangi Apple Ads kampanyasının abonelik getirdiğini söyler, uygulamalar arası izleme yapmaz). Sızıntı kontrolü, Ayarlar → Gizlilik'ten açana dek kapalıdır; açıksa parolanın SHA-1 özetinin yalnız ilk 5 karakteri Have I Been Pwned'e gider, karşılaştırmanın kalanı cihazında olur. Çökme raporları da Ayarlar → Gizlilik'ten açana dek kapalıdır; açıksa çökme tanıları ve oturumların beşte birinden performans izleri Sentry'ye, cihaz modeli, iOS ve uygulama sürümü ve bu kuruluma özel rastgele bir kimlikle gider — kasa içeriği ve ekran görüntüsü asla.</p>
+      <p><strong>Satın almalar.</strong> Ödemeleri Apple işler. RevenueCat abonelik durumunu ve satın alma geçmişini anonim bir uygulama kullanıcı kimliği altında tutar.</p>
+      <p><strong>Yapmadıklarımız.</strong> Uygulamada reklam yok. Kişisel veriyi satmayız ya da paylaşmayız. Başka şirketlerin uygulama ve sitelerinde seni izlemeyiz. Hesap yok, analiz yok.</p>
+      <p><strong>Silme.</strong> Uygulamayı silmek kasayı bu iPhone'dan siler. iPhone yedeklerindeki kopyalar sen o yedekleri silene dek, sırrın iCloud Anahtar Zinciri'ndeki kopyası da kasayı sıfırlayana dek kalır: her şeyi silmek için uygulamayı silmeden önce Ayarlar → Kasayı sıfırla'yı kullan. Sızıntı kontrolünü ya da çökme raporlarını Ayarlar → Gizlilik'ten kapatmak onları hemen durdurur. Satın alma kayıtlarını Apple ve RevenueCat faturalama gereği tutar. Bu kuruluma bağlı çökme tanılarının ya da anonim abonelik kaydının silinmesi için aşağıdaki adrese yaz; sileriz.</p>
+      <p><strong>İletişim:</strong> <a href="mailto:cankanbur1@gmail.com">cankanbur1@gmail.com</a></p>
+    </div>
+
+    <hr>
+    <footer>
+      <a href="./">Passla</a>
+      <a href="terms">Terms</a>
+      <a href="support">Support</a>
+    </footer>
+  </main>
+</body>
+</html>
